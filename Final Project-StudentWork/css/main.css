@@ -1,0 +1,125 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.6;
+  background-color: black;
+  color: #3a3a3a;
+  margin: 0;
+}
+h3 {
+	text-align: right;
+	color: #fff;
+}
+h5, p {
+	color: #fff;
+}
+.navbar-nav .nav-item .nav-link {
+  color: royalblue;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+  color: lightblue;
+}
+.navbar-dark .navbar-brand {
+  text-shadow: 1.5px 1.5px black;
+  color: white;
+}
+.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+  color: grey;
+}
+.bg-transparent {
+  background-color: transparent;
+  transition: background-color .3s ease-in-out;
+}
+.bg-transparent:hover {
+  background-color: #f8f9fa !important;
+}
+.card-body {
+  background-color: #000;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+.card-title {
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+.card-subtitle {
+  color: #fff;
+  margin-top: -0.375rem;
+  margin-bottom: 0;
+}
+.card-text:last-child {
+  color: #fff;
+  margin-bottom: 0;
+}
+.card {
+  position: relative;
+  display: inline-block;
+}
+.card .card-img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.card:hover .card-img-top {
+  display: inline;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.list-unstyled {
+  text-align: right;
+  color: #fff
+}
+.main-footer {
+  color: #000;
+  text-align: center;
+  background: #dddddd;
+  padding: 1.5em 0;
+  margin-top: 5px;
+}
+.card-img-top {
+  transition: transform .2s;
+}
+
+.card-img-top:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.feature-wrap .panorama {
+	padding: 10% 0;
+	background-image: url(../img/panorama.png);
+	-webkit-animation: moving-bg 20s linear infinite alternate;
+	animation: moving-bg 20s linear infinite alternate;
+}
+.feature-wrap .photo {
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.mobile .feature-wrap .photo {
+	background-attachment: scroll;
+}
+@-webkit-keyframes moving-bg {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 100% 0;
+	}
+}
+@keyframes moving-bg {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 100% 0;
+	}
+}
